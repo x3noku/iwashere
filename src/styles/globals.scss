@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './theme.scss';
+
+@layer base {
+
+    html,
+    html[data-theme='light'] {
+        @include light;
+    }
+
+    html[data-theme='dark'] {
+        @include dark;
+    }
+
+    body {
+        @apply font-500;
+    }
+}
